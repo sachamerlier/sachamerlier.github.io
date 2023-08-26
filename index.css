@@ -1,3 +1,7 @@
+h1, p, a, h2, span
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 .menuContainer
 {
     min-width: 100vw;
@@ -7,9 +11,9 @@
     left: 0;
     background-color: aqua;
     transform: translateY(100vh);
-    transition: all 1s cubic-bezier(0.25, 0.1, 0, 1) 0s;
-    z-index: 1
-    ;
+    transition: transform 1s cubic-bezier(0.25, 0.1, 0, 1) 0s;
+    transition: transform 1s cubic-bezier(0.25, 0.1, 0, 1) 0s, background-color 0.5s ease-in-out;
+    z-index: 1;
 }
 
 header
@@ -23,7 +27,56 @@ header
 
 .BoutonMenu
 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: xx-large;
     cursor: pointer;
+}
+.UpperMenu, .BottomMenu
+{
+    min-height: 20vh;
+}
+.MidMenu
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.partiDroiteMid
+{
+    display: flex;
+    flex-direction: column;
+}
+.partiDroiteMid a 
+{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 10px 0 10px 0;
+    font-size: xx-large;
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+}
+.partiDroiteMid a:hover {
+    opacity: 1;
+    /* Opacité maximale pour le lien survolé */
+}
+
+.partiDroiteMid a:not(:hover) {
+    opacity: 0.5;
+    /* Opacité réduite pour les autres liens */
+}
+.partiDroiteMid:not(:hover) a {
+    opacity: 1;
+    /* Opacité maximale pour tous les liens lorsque rien n'est survolé */
+}
+
+.firstLienColor
+{
+    background-color: blueviolet;
+}
+.secondLienColor
+{
+    background-color: chartreuse;
+}
+.thirdLienColor
+{
+    background-color: coral;
 }
