@@ -7,7 +7,7 @@
     left: 0;
     background-color: aqua;
     transform: translateY(100vh);
-    transition: all 1s ease-in-out;
+    transition: all 1s cubic-bezier(0.25, 0.1, 0, 1) 0s;
     z-index: 1
     ;
 }
