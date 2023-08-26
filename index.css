@@ -1,0 +1,29 @@
+.menuContainer
+{
+    min-width: 100vw;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: aqua;
+    transform: translateY(100vh);
+    transition: all 1s ease-in-out;
+    z-index: 1
+    ;
+}
+
+header
+{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.BoutonMenu
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+    cursor: pointer;
+}
